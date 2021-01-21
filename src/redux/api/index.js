@@ -1,6 +1,5 @@
 import axios from 'axios';
-const API_URL =
-  'https://staging.healthandglow.com/api/catalog/product/v6/search/999?app=web&version=3.0.2&tag=loreal-paris&page=';
+const API_URL = 'https://staging.healthandglow.com/api/catalog/product/v6/';
 
 const axiosInstance = axios.create({
   withCredentials: true,
@@ -8,7 +7,7 @@ const axiosInstance = axios.create({
   timeout: 5000,
 });
 
-const Get = async (url, data) => {
+const Get = async (url) => {
   return axiosInstance.get(url);
 };
 

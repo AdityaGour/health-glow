@@ -21,12 +21,12 @@ const App = () => {
         <StatusBar barStyle="dark-content" />
         <NavigationContainer>
           <SafeAreaView style={{flex: 1}}>
-            <ScrollView
+            {/* <ScrollView
               contentInsetAdjustmentBehavior="automatic"
               style={styles.scrollView}
-              contentContainerStyle={styles.scrollView}>
-              <AuthLoading />
-            </ScrollView>
+              contentContainerStyle={styles.scrollView}> */}
+            <AuthLoading />
+            {/* </ScrollView> */}
           </SafeAreaView>
         </NavigationContainer>
       </Provider>
